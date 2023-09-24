@@ -1,0 +1,28 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 3288, in script
+    return;
+SyntaxError: unexpected EOF while parsing (game/script.rpy, line 3288)
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 3288, in script
+    return;
+  File "C:\Users\1\Desktop\renpy-8.0.3-sdk\renpy\ast.py", line 1768, in execute
+    renpy.store._return = renpy.python.py_eval(self.expression)
+  File "C:\Users\1\Desktop\renpy-8.0.3-sdk\renpy\python.py", line 1090, in py_eval
+    code = py_compile(code, 'eval')
+  File "C:\Users\1\Desktop\renpy-8.0.3-sdk\renpy\python.py", line 1027, in py_compile
+    raise e
+  File "C:\Users\1\Desktop\renpy-8.0.3-sdk\renpy\python.py", line 979, in py_compile
+    raise orig_e
+  File "C:\Users\1\Desktop\renpy-8.0.3-sdk\renpy\python.py", line 972, in py_compile
+    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
+SyntaxError: unexpected EOF while parsing (game/script.rpy, line 3288)
+
+Windows-10-10.0.18363 AMD64
+Ren'Py 8.0.3.22090809
+Infinite Story v0.7
+Tue Dec 27 00:02:20 2022
